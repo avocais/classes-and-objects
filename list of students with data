@@ -1,0 +1,19 @@
+myVal = [1, 2, 3]
+
+class Student():
+
+    def __init__(this, name, surname, age, group):
+        this.name = name
+        this.surname = surname
+        this.age = age
+        this.group = group
+
+    def myFunc(self, myVal):
+        return (self.name + ' ' + self.surname + ' ' + self.age + ' ' + self.group) * myVal[1]
+
+
+student1 = Student('Balenshe', 'Balenshiev', 18, 'GDO-02')
+student2 = Student('Tugenshe', 'Tugenshiev', 21, 'GIS-19')
+
+print(student1.myFunc(myVal))
+print(student2.myFunc(myVal))
